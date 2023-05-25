@@ -1,0 +1,10 @@
+flask
+gunicorn
+flask-sqlalchemy
+flask-migrate
+flask-login
+flask-wtf
+flask-bootstrap
+flask-moment
+flask-babel
+# any other packages that your app needs
