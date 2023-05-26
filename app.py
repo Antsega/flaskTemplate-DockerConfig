@@ -8,7 +8,7 @@ def say_hello(username = "World"):
 header_text = '''
     <html>\n<head> <title> Flask Test </title> </head>\n <body>'''
 instructions = '''
-    <p><em>Hint</em>: This is a RESTful web service! Append a username
+    <p><em>Hint</em>: This is a Test Test Test web service! Append a username
     to the URL to say hello to someone specific.</p>\n'''
 home_link = '<p><a href ="/">Back</a></p>\n'
 footer_text = '<body>\n<html>'
