@@ -1,12 +1,10 @@
 steps:
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/$PROJECT_ID/my_flask_app', '.']
+    args: ['build', '-t', 'gcr.io/flask-app-2023-387823/my_flask_app', '.']
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'gcr.io/$PROJECT_ID/my_flask_app']
+    args: ['push', 'gcr.io/flask-app-2023-387823/my_flask_app']
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: '/bin/bash'
-    args: ['-c', 'gcloud run deploy flask-app --image gcr.io/$PROJECT_ID/my_flask_app --platform managed --region us-central1 --allow-unauthenticated']
+    args: ['-c', 'gcloud run deploy flask-app --image gcr.io/flask-app-2023-387823/my_flask_app --platform managed --region us-central1 --allow-unauthenticated']
 images:
-  - 'gcr.io/$PROJECT_ID/my_flask_app'
-
-# Test Test
+  - 'gcr.io/flask-app-2023-387823/my_flask_app'

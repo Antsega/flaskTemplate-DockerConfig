@@ -80,3 +80,7 @@ Replace `my-service` with your actual service name and `us-central1` with your d
 ---
 
 Please refer to the relevant documentation for more detailed steps and troubleshooting. If you encounter issues or have further questions, feel free to raise an issue in this repository.
+
+Helpful Links
+Cloud Build Logs
+https://console.cloud.google.com/cloud-build/builds?_ga=2.14484660.2062548505.1685055387-541186574.1670604918&_gac=1.162001102.1685055996.Cj0KCQjwjryjBhD0ARIsAMLvnF8Kadh5r1uNcQIn4c_KN-lIMVPhHiKCX9nrzrIZvjbbiCoUAeeHaZIaAgWWEALw_wcB
