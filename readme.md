@@ -15,9 +15,7 @@ This guide walks through the steps to run and deploy a Flask application locally
 
 To run the application in your local environment, you need to start the Flask server using the following command:
 
-\`\`\`bash
-python app.py
-\`\`\`
+> `python app.py`
 
 ---
 
@@ -27,17 +25,11 @@ Once you have a Dockerfile, you can build an image and then test it:
 
 **Step 2.1: Building the Docker Image**
 
-\`\`\`bash
-# Build the Docker image
-docker build -t my_flask_app .
-\`\`\`
+> `docker build -t my_flask_app .`
 
 **Step 2.2: Running the Docker Container**
 
-\`\`\`bash
-# Run the Docker container
-docker run -p 8080:8080 my_flask_app
-\`\`\`
+> `docker run -p 8080:8080 my_flask_app`
 
 ---
 
@@ -47,33 +39,23 @@ To deploy the Docker image to Google Cloud Run, follow these steps:
 
 **Step 3.1: Configuring Docker with GCloud**
 
-\`\`\`bash
-gcloud auth configure-docker
-\`\`\`
+> `gcloud auth configure-docker`
 
 **Step 3.2: Tagging the Docker Image**
 
 Replace `[YOUR-PROJECT-ID]` with your Google Cloud project ID.
 
-\`\`\`bash
-# Tag the Docker image
-docker tag my_flask_app gcr.io/[YOUR-PROJECT-ID]/my_flask_app
-\`\`\`
+> `docker tag my_flask_app gcr.io/[YOUR-PROJECT-ID]/my_flask_app`
 
 **Step 3.3: Pushing the Docker Image**
 
-\`\`\`bash
-# Push the Docker image
-docker push gcr.io/[YOUR-PROJECT-ID]/my_flask_app
-\`\`\`
+> `docker push gcr.io/[YOUR-PROJECT-ID]/my_flask_app`
 
 **Step 3.4: Deploying to Google Cloud Run**
 
 Replace `SERVICE_NAME`, `PROJECT_ID`, `IMAGE_NAME`, and `REGION_NAME` with your service name, project ID, image name, and region respectively. For example:
 
-\`\`\`bash
-gcloud run deploy flask-app --image gcr.io/flask-app-2023-387823/my_flask_app --platform managed --region us-central1
-\`\`\`
+> `gcloud run deploy flask-app --image gcr.io/flask-app-2023-387823/my_flask_app --platform managed --region us-central1`
 
 ---
 

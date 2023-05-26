@@ -5,6 +5,6 @@ steps:
     args: ['push', 'gcr.io/$PROJECT_ID/my_flask_app']
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: '/bin/bash'
-    args: ['-c', 'gcloud run deploy my_flask_app --image gcr.io/$PROJECT_ID/my_flask_app --platform managed --region us-central1 --allow-unauthenticated']
+    args: ['-c', 'gcloud run deploy flask-app --image gcr.io/$PROJECT_ID/my_flask_app --platform managed --region us-central1 --allow-unauthenticated']
 images:
   - 'gcr.io/$PROJECT_ID/my_flask_app'
