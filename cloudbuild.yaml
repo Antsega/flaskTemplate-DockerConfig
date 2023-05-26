@@ -8,3 +8,5 @@ steps:
     args: ['-c', 'gcloud run deploy flask-app --image gcr.io/$PROJECT_ID/my_flask_app --platform managed --region us-central1 --allow-unauthenticated']
 images:
   - 'gcr.io/$PROJECT_ID/my_flask_app'
+
+# Test Test
