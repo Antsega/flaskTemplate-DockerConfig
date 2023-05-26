@@ -1,3 +1,4 @@
+# Example of what it might contain for a typical Flask app
 flask
 gunicorn
 flask-sqlalchemy
